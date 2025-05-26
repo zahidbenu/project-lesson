@@ -123,7 +123,7 @@ $(document).ready(function() {
       dots: true,
       arrows:false,
       infinite: true,
-      autoplay:false,
+      autoplay: true,
       autoplaySpeed: 3000,
       slidesToShow: 1,
       slidesToScroll: 1,
