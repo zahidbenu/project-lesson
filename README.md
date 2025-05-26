@@ -1,5 +1,7 @@
 # Project lesson
 
+This is an Educational landing page.
+
 This project I have created as a practice exercise for RRF-Batch-2025. I have used HTML, CSS3 and jQuery to develop this website. It's responsive  across all devices and designed with attention to UI/UX best practices, ensuring a clean layout, smooth interactivity, and accessibility for users. 
 
 ## Live Demo
