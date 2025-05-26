@@ -1118,6 +1118,7 @@ footer hr {
     .footer-support, 
     .footer-address {
         width: 100%;
+        margin-bottom: 50px;
     }
 
     .footer-support,
