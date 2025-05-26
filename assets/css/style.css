@@ -1114,6 +1114,12 @@ footer hr {
         display: block;
     }
 
+    .footer-company, 
+    .footer-support, 
+    .footer-address {
+        width: 100%;
+    }
+
     .footer-support,
     .footer-address {
         padding: 0;
