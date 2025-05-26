@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,400&family=Sen:wght@700&display=swap" rel="stylesheet">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- jquery -->
+    <script src="assets/js/jquery.min.js"></script>
+    <!-- slick -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Lesson</title>
+</head>
+<body>
+    <!-- header area -->
+    <header>
+        <div class="container">
+            <div class="header-wrapper">
+
+                <div class="Logo-wrapper">
+                    <!-- mobile toggle icon -->
+                    <button id="mobileToggle" type="button" class="mobile-toggle-icon">
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="#2E2100" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                        </svg>
+                        </span>
+                    </button>
+
+                    <!-- site logo -->
+                    <div class="site-logo">
+                        <a href="index.html"><img src="assets/img/site-logo.png" alt="Site Logo"></a>
+                    </div>
+                </div>
+
+                <div class="menu-wrapper">
+                    <!-- main menu -->
+                    <nav class="main-menu">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="courses.html">Courses</a></li>
+                            <li><a href="pricing.html">Pricing</a></li>
+                            <li><a href="reviews.html">Reviews</a></li>
+                        </ul>
+                    </nav>
+                
+                    <!-- sign up btn -->
+                    <a href="" class="sign-up btn">Sign Up</a>
+                </div>
+            </div>
+        </div>
+
+        <div id="mobileMenuToggle" class="mobile-menu">
+            <!-- main menu -->
+            <nav class="mobile-menu-toggle">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="reviews.html">Reviews</a></li>
+                </ul>
+
+                <button class="mobile-menu-close"><i class="fa-solid fa-xmark"></i></button>
+            </nav>
+
+            
+        </div>
+    </header>
+
+    <!-- testimonial -->
+    <section class="testimonial-area reviews-page">
+        <div class="container">
+            <div class="testimonial-slider">
+                <!-- single slide item 1 -->
+                <div class="testimonial-slide-single">
+                    <div class="user">
+                        <div class="user-image">
+                            <img src="assets/img/user-1.png" alt="User Image">
+                        </div>
+
+                        <h3>Peter Moor</h3>
+                        <p>Student of Web Design</p>
+                    </div>
+
+                    <div class="testimonial-context">
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="28" viewBox="0 0 30 28" fill="none">
+                                <path d="M12.9168 1.23505V6.26199C12.9168 6.94407 12.3663 7.49652 11.6875 7.49652C9.26544 7.49652 7.94779 9.99114 7.76491 14.9155H11.6875C12.3662 14.9155 12.9168 15.4688 12.9168 16.1501V26.7647C12.9168 27.4465 12.3663 27.999 11.6875 27.999H1.22938C0.550795 27.999 1.90735e-06 27.4459 1.90735e-06 26.7647V16.15C1.90735e-06 13.7896 0.237282 11.6235 0.703081 9.71055C1.1816 7.74949 1.91613 6.035 2.8858 4.61422C3.88306 3.15417 5.13161 2.00845 6.59457 1.21054C8.06863 0.407543 9.78211 0 11.688 0C12.3662 0.000516891 12.9168 0.553486 12.9168 1.23505ZM28.771 7.49696C29.4496 7.49696 30 6.94407 30 6.26294V1.23497C30 0.553488 29.4496 0.000951767 28.771 0.000951767C26.866 0.000951767 25.1517 0.408579 23.6785 1.21149C22.2148 2.00931 20.9664 3.15408 19.9693 4.61517C18.999 6.03595 18.2645 7.75052 17.786 9.71254C17.32 11.6255 17.0832 13.7917 17.0832 16.151V26.7657C17.0832 27.4476 17.6341 28 18.3125 28H28.771C29.4496 28 30 27.447 30 26.7657V16.151C30 15.4693 29.4496 14.9165 28.771 14.9165H24.9035C25.0841 9.99165 26.3828 7.49696 28.771 7.49696Z" fill="#634700"/>
+                            </svg>
+                        </span>
+                        
+                        <p>Not only does my resume look impressive—filled with the names and logos of world-class institutions—but these certificates also bring me closer to my career goals by validating the skills I've learned." </p>
+                    </div>
+                </div>
+
+                <!-- single slide item 2 -->
+                <div class="testimonial-slide-single">
+                    <div class="user">
+                        <div class="user-image">
+                            <img src="assets/img/user-2.png" alt="User Image">
+                        </div>
+
+                        <h3>Bombardino Crocodilo</h3>
+                        <p>Student of UI/UX design</p>
+                    </div>
+
+                    <div class="testimonial-context">
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="28" viewBox="0 0 30 28" fill="none">
+                                <path d="M12.9168 1.23505V6.26199C12.9168 6.94407 12.3663 7.49652 11.6875 7.49652C9.26544 7.49652 7.94779 9.99114 7.76491 14.9155H11.6875C12.3662 14.9155 12.9168 15.4688 12.9168 16.1501V26.7647C12.9168 27.4465 12.3663 27.999 11.6875 27.999H1.22938C0.550795 27.999 1.90735e-06 27.4459 1.90735e-06 26.7647V16.15C1.90735e-06 13.7896 0.237282 11.6235 0.703081 9.71055C1.1816 7.74949 1.91613 6.035 2.8858 4.61422C3.88306 3.15417 5.13161 2.00845 6.59457 1.21054C8.06863 0.407543 9.78211 0 11.688 0C12.3662 0.000516891 12.9168 0.553486 12.9168 1.23505ZM28.771 7.49696C29.4496 7.49696 30 6.94407 30 6.26294V1.23497C30 0.553488 29.4496 0.000951767 28.771 0.000951767C26.866 0.000951767 25.1517 0.408579 23.6785 1.21149C22.2148 2.00931 20.9664 3.15408 19.9693 4.61517C18.999 6.03595 18.2645 7.75052 17.786 9.71254C17.32 11.6255 17.0832 13.7917 17.0832 16.151V26.7657C17.0832 27.4476 17.6341 28 18.3125 28H28.771C29.4496 28 30 27.447 30 26.7657V16.151C30 15.4693 29.4496 14.9165 28.771 14.9165H24.9035C25.0841 9.99165 26.3828 7.49696 28.771 7.49696Z" fill="#634700"/>
+                            </svg>
+                        </span>
+                        
+                        <p>Of course Not only does my resume look impressive—filled with the names and logos of world-class institutions—but these certificates also bring me closer to my career goals by validating the skills I've learned." </p>
+                    </div>
+                </div>
+
+                <!-- single slide item 1 -->
+                <div class="testimonial-slide-single">
+                    <div class="user">
+                        <div class="user-image">
+                            <img src="assets/img/user-3.png" alt="User Image">
+                        </div>
+
+                        <h3>Ballerina Cupucina</h3>
+                        <p>Student of Web App Design</p>
+                    </div>
+
+                    <div class="testimonial-context">
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="28" viewBox="0 0 30 28" fill="none">
+                                <path d="M12.9168 1.23505V6.26199C12.9168 6.94407 12.3663 7.49652 11.6875 7.49652C9.26544 7.49652 7.94779 9.99114 7.76491 14.9155H11.6875C12.3662 14.9155 12.9168 15.4688 12.9168 16.1501V26.7647C12.9168 27.4465 12.3663 27.999 11.6875 27.999H1.22938C0.550795 27.999 1.90735e-06 27.4459 1.90735e-06 26.7647V16.15C1.90735e-06 13.7896 0.237282 11.6235 0.703081 9.71055C1.1816 7.74949 1.91613 6.035 2.8858 4.61422C3.88306 3.15417 5.13161 2.00845 6.59457 1.21054C8.06863 0.407543 9.78211 0 11.688 0C12.3662 0.000516891 12.9168 0.553486 12.9168 1.23505ZM28.771 7.49696C29.4496 7.49696 30 6.94407 30 6.26294V1.23497C30 0.553488 29.4496 0.000951767 28.771 0.000951767C26.866 0.000951767 25.1517 0.408579 23.6785 1.21149C22.2148 2.00931 20.9664 3.15408 19.9693 4.61517C18.999 6.03595 18.2645 7.75052 17.786 9.71254C17.32 11.6255 17.0832 13.7917 17.0832 16.151V26.7657C17.0832 27.4476 17.6341 28 18.3125 28H28.771C29.4496 28 30 27.447 30 26.7657V16.151C30 15.4693 29.4496 14.9165 28.771 14.9165H24.9035C25.0841 9.99165 26.3828 7.49696 28.771 7.49696Z" fill="#634700"/>
+                            </svg>
+                        </span>
+                        
+                        <p>My resume not only does look impressive—filled with the names and logos of world-class institutions—but these certificates also bring me closer to my career goals by validating the skills I've learned." </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- about area part 1 -->
+    <section class="about-area">
+        <div class="container">
+            <div class="about-wrapper">
+                <div class="image-box">
+                    <img src="assets/img/about-image-1.png" alt="Man Working On Laptop"  class="image1">
+                    <img src="assets/img/about-image-2.png" alt="Man Working On Laptop">
+                </div>
+
+                <div class="main-context">
+                    <h2>Learner outcomes through our awesome platform</h2>
+                    <p>87% of people learning for professional development report career benefits like getting a promotion, a raise, or starting a new career.</p>
+
+                    <a href="" class="impact-report">Lesson Impact Report (2022)</a>
+
+                    <a href="" class="btn">Sign Up</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- blog area -->
+    <section class="blog-area">
+        <div class="container">
+            <!-- blog intro -->
+            <div class="blog-intro">
+                <h2>Our blog</h2>
+                <p>Read our regular travel blog and know the latest update of tour and travel</p>
+            </div>
+            
+            <!-- blog slider -->
+            <div class="blog-slider">
+                <div class="blog-slider-wrapper">
+                    <!-- single slide item 1 -->
+                    <div class="single-slide-box">
+                        <div class="single-slide">
+                            <div class="slide-image">
+                                <img src="assets/img/blog-image-1.png" alt="Slide Image">
+                            </div>
+
+                            <div class="slide-context">
+                                <article>
+                                    <span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="6" height="6" viewBox="0 0 6 6" fill="none">
+                                            <circle cx="3" cy="3" r="3" fill="#FFB900"/>
+                                        </svg>
+                                    </span>
+                                    <time datetime="2025-05-24">21 November 2021</time>
+
+                                    <!-- custom line -->
+                                    <div class="custom-line"></div>
+
+                                    <h2>How to become a pro web designer in 2022 and get remot job?</h2>
+
+                                    <a href="" class="btn">Read More</a>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- single slide item 2 -->
+                    <div class="single-slide-box">
+                        <div class="single-slide">
+                            <div class="slide-image">
+                                <img src="assets/img/blog-image-2.png" alt="Slide Image">
+                            </div>
+
+                            <div class="slide-context">
+                                <article>
+                                    <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="6" height="6" viewBox="0 0 6 6" fill="none">
+                                        <circle cx="3" cy="3" r="3" fill="#FFB900"/>
+                                        </svg>
+                                    </span>
+                                    <time datetime="2025-05-24">21 November 2021</time>
+
+                                    <!-- custom line -->
+                                    <div class="custom-line"></div>
+
+                                    <h2>How to become a pro web designer in 2022 and get remot job?</h2>
+
+                                    <a href="" class="btn">Read More</a>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- single slide item 3 -->
+                    <div class="single-slide-box">
+                        <div class="single-slide">
+                            <div class="slide-image">
+                                <img src="assets/img/blog-image-3.png" alt="Slide Image">
+                            </div>
+
+                            <div class="slide-context">
+                                <article>
+                                    <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="6" height="6" viewBox="0 0 6 6" fill="none">
+                                        <circle cx="3" cy="3" r="3" fill="#FFB900"/>
+                                        </svg>
+                                    </span>
+                                    <time datetime="2025-05-24">21 November 2021</time>
+
+                                    <!-- custom line -->
+                                    <div class="custom-line"></div>
+
+                                    <h2>How to become a pro web designer in 2022 and get remot job?</h2>
+
+                                    <a href="" class="btn">Read More</a>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- single slide item 4 -->
+                    <div class="single-slide-box">
+                        <div class="single-slide">
+                            <div class="slide-image">
+                                <img src="assets/img/blog-image-2.png" alt="Slide Image">
+                            </div>
+
+                            <div class="slide-context">
+                                <article>
+                                    <span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="6" height="6" viewBox="0 0 6 6" fill="none">
+                                            <circle cx="3" cy="3" r="3" fill="#FFB900"/>
+                                        </svg>
+                                    </span>
+                                    <time datetime="2025-05-24">21 November 2021</time>
+
+                                    <!-- custom line -->
+                                    <div class="custom-line"></div>
+
+                                    <h2>How to become a pro web designer in 2022 and get remot job?</h2>
+
+                                    <a href="" class="btn">Read More</a>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer area -->
+    <footer>
+        <div class="container">
+            <div class="footer-main">
+                <div class="footer-branding">
+                    <div class="footer-logo">
+                        <img src="assets/img/footer-logo.png" alt="Site Logo">
+                    </div>
+
+                    <p>Need to help for your dream Career? <br> trust us. With Lesson, study becomes <br> a lot easier with us.</p>
+
+                    <div class="footer-social">
+                        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <div class="footer-company">
+                        <h4>Company</h4>
+                        <!-- border line -->
+                        <div class="border-line"></div>
+
+                        <ul>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Features</a></li>
+                            <li><a href="#">Our Pricing</a></li>
+                            <li><a href="#">Latest News</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-support">
+                        <h4>Support</h4>
+                        <!-- border line -->
+                        <div class="border-line"></div>
+
+                        <ul>
+                            <li><a href="#">FAQ’s</a></li>
+                            <li><a href="#">Terms & Conditions</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="">Contact Us</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-address">
+                        <h4>Address</h4>
+                        <!-- border line -->
+                        <div class="border-line"></div>
+                        
+                        <address>
+                            <p><strong>Location:</strong> 27 Division St, New York, NY 10002, USA</p>
+                            <p><strong>Email:</strong> <a href="mailto:email@gmail.com">email@gmail.com</a></p>
+                            <p><strong>Phone:</strong> <a href="tel:0001234567890">+000 1234 567 890</a></p>
+                        </address>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="footer-foot">
+                Copyright ©2025 webdesign.gdn All rights reserved | Developed by Zahid Hasan
+            </div>
+        </div>
+    </footer>
+
+    <!-- main js -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

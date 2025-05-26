@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,400&family=Sen:wght@700&display=swap" rel="stylesheet">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- jquery -->
+    <script src="assets/js/jquery.min.js"></script>
+    <!-- slick -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Lesson</title>
+</head>
+<body>
+    <!-- header area -->
+    <header>
+        <div class="container">
+            <div class="header-wrapper">
+
+                <div class="Logo-wrapper">
+                    <!-- mobile toggle icon -->
+                    <button id="mobileToggle" type="button" class="mobile-toggle-icon">
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="#2E2100" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                        </svg>
+                        </span>
+                    </button>
+
+                    <!-- site logo -->
+                    <div class="site-logo">
+                        <a href="index.html"><img src="assets/img/site-logo.png" alt="Site Logo"></a>
+                    </div>
+                </div>
+
+                <div class="menu-wrapper">
+                    <!-- main menu -->
+                    <nav class="main-menu">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="courses.html">Courses</a></li>
+                            <li><a href="pricing.html">Pricing</a></li>
+                            <li><a href="reviews.html">Reviews</a></li>
+                        </ul>
+                    </nav>
+                
+                    <!-- sign up btn -->
+                    <a href="" class="sign-up btn">Sign Up</a>
+                </div>
+            </div>
+        </div>
+
+        <div id="mobileMenuToggle" class="mobile-menu">
+            <!-- main menu -->
+            <nav class="mobile-menu-toggle">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="reviews.html">Reviews</a></li>
+                </ul>
+
+                <button class="mobile-menu-close"><i class="fa-solid fa-xmark"></i></button>
+            </nav>
+
+            
+        </div>
+    </header>
+
+    <!-- hero area -->
+    <section class="hero-area">
+        <div class="container">
+            <div class="hero-wrapper">
+                <!-- hero image -->
+                <div class="hero-image">
+                    <img src="assets/img/hero-image.png" alt="Hero Image">
+
+                    <div class="courses-hightlight">
+                        <div class="highlight-wrapper">
+                            <div class="highlight-track">
+                                <!-- highlight box 1 -->
+                                <div class="single-highlight-box">
+                                    <!-- icon -->
+                                    <span class="icon-1">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                            <path d="M0.75 8.25V21H23.25V8.25H0.75ZM12.75 18H5.25C5.05109 18 4.86032 17.921 4.71967 17.7803C4.57902 17.6397 4.5 17.4489 4.5 17.25C4.5 17.0511 4.57902 16.8603 4.71967 16.7197C4.86032 16.579 5.05109 16.5 5.25 16.5H12.75C12.9489 16.5 13.1397 16.579 13.2803 16.7197C13.421 16.8603 13.5 17.0511 13.5 17.25C13.5 17.4489 13.421 17.6397 13.2803 17.7803C13.1397 17.921 12.9489 18 12.75 18ZM18.75 15H5.25C5.05109 15 4.86032 14.921 4.71967 14.7803C4.57902 14.6397 4.5 14.4489 4.5 14.25C4.5 14.0511 4.57902 13.8603 4.71967 13.7197C4.86032 13.579 5.05109 13.5 5.25 13.5H18.75C18.9489 13.5 19.1397 13.579 19.2803 13.7197C19.421 13.8603 19.5 14.0511 19.5 14.25C19.5 14.4489 19.421 14.6397 19.2803 14.7803C19.1397 14.921 18.9489 15 18.75 15ZM18.75 12H5.25C5.05109 12 4.86032 11.921 4.71967 11.7803C4.57902 11.6397 4.5 11.4489 4.5 11.25C4.5 11.0511 4.57902 10.8603 4.71967 10.7197C4.86032 10.579 5.05109 10.5 5.25 10.5H18.75C18.9489 10.5 19.1397 10.579 19.2803 10.7197C19.421 10.8603 19.5 11.0511 19.5 11.25C19.5 11.4489 19.421 11.6397 19.2803 11.7803C19.1397 11.921 18.9489 12 18.75 12Z" fill="#FFB900"/>
+                                            <path d="M0.75 3V6.75H23.25V3H0.75ZM3 5.625C2.85166 5.625 2.70666 5.58101 2.58332 5.4986C2.45999 5.41619 2.36386 5.29906 2.30709 5.16201C2.25032 5.02497 2.23547 4.87417 2.26441 4.72868C2.29335 4.5832 2.36478 4.44956 2.46967 4.34467C2.57456 4.23978 2.7082 4.16835 2.85368 4.13941C2.99917 4.11047 3.14997 4.12532 3.28701 4.18209C3.42406 4.23886 3.54119 4.33499 3.6236 4.45832C3.70601 4.58166 3.75 4.72666 3.75 4.875C3.75 5.07391 3.67098 5.26468 3.53033 5.40533C3.38968 5.54598 3.19891 5.625 3 5.625ZM5.25 5.625C5.10166 5.625 4.95666 5.58101 4.83332 5.4986C4.70999 5.41619 4.61386 5.29906 4.55709 5.16201C4.50032 5.02497 4.48547 4.87417 4.51441 4.72868C4.54335 4.5832 4.61478 4.44956 4.71967 4.34467C4.82456 4.23978 4.9582 4.16835 5.10368 4.13941C5.24917 4.11047 5.39997 4.12532 5.53701 4.18209C5.67406 4.23886 5.79119 4.33499 5.8736 4.45832C5.95601 4.58166 6 4.72666 6 4.875C6 5.07391 5.92098 5.26468 5.78033 5.40533C5.63968 5.54598 5.44891 5.625 5.25 5.625ZM7.5 5.625C7.35166 5.625 7.20666 5.58101 7.08332 5.4986C6.95999 5.41619 6.86386 5.29906 6.80709 5.16201C6.75032 5.02497 6.73547 4.87417 6.76441 4.72868C6.79335 4.5832 6.86478 4.44956 6.96967 4.34467C7.07456 4.23978 7.2082 4.16835 7.35368 4.13941C7.49917 4.11047 7.64997 4.12532 7.78701 4.18209C7.92406 4.23886 8.04119 4.33499 8.1236 4.45832C8.20601 4.58166 8.25 4.72666 8.25 4.875C8.25 5.07391 8.17098 5.26468 8.03033 5.40533C7.88968 5.54598 7.69891 5.625 7.5 5.625Z" fill="#FFB900"/>
+                                        </svg>
+                                    </span>
+
+
+                                    <div class="course-info">
+                                        <p>20 Courses</p>
+                                        <h3>UI/UX Design</h3>
+                                    </div>
+                                </div>
+
+                                <!-- highlight box 2 -->
+                                <div class="single-highlight-box">
+                                    <!-- icon -->
+                                    <span class="icon-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                            <path d="M0.75 8.25V21H23.25V8.25H0.75ZM10.3286 16.7569C10.3956 16.8307 10.4472 16.9171 10.4804 17.0111C10.5136 17.1051 10.5277 17.2048 10.5219 17.3043C10.5161 17.4038 10.4906 17.5012 10.4467 17.5907C10.4029 17.6802 10.3417 17.7601 10.2666 17.8257C10.1915 17.8913 10.1041 17.9412 10.0095 17.9726C9.91491 18.004 9.81499 18.0163 9.7156 18.0086C9.61622 18.001 9.51935 17.9736 9.43067 17.9281C9.34199 17.8825 9.26327 17.8198 9.19913 17.7435L6.1425 14.2448L9.19987 10.7573C9.26397 10.6805 9.34276 10.6174 9.4316 10.5716C9.52044 10.5258 9.61755 10.4982 9.71721 10.4904C9.81687 10.4827 9.91708 10.4949 10.0119 10.5264C10.1068 10.558 10.1944 10.6081 10.2696 10.674C10.3448 10.7399 10.4061 10.8201 10.4498 10.91C10.4935 10.9999 10.5189 11.0976 10.5243 11.1974C10.5297 11.2972 10.5151 11.3971 10.4814 11.4912C10.4477 11.5853 10.3955 11.6717 10.3279 11.7454L8.13525 14.2463L10.3286 16.7569ZM14.8286 17.7435C14.7645 17.8198 14.6858 17.8825 14.5971 17.9281C14.5084 17.9736 14.4115 18.001 14.3121 18.0086C14.2128 18.0163 14.1128 18.004 14.0182 17.9726C13.9236 17.9412 13.8362 17.8913 13.7612 17.8257C13.6861 17.7601 13.6248 17.6802 13.581 17.5907C13.5372 17.5012 13.5116 17.4038 13.5058 17.3043C13.5 17.2048 13.5142 17.1051 13.5474 17.0111C13.5805 16.9171 13.6321 16.8307 13.6991 16.7569L15.8925 14.2463L13.6999 11.7439C13.6323 11.6702 13.5801 11.5838 13.5463 11.4897C13.5126 11.3956 13.498 11.2957 13.5035 11.1959C13.5089 11.0961 13.5342 10.9984 13.5779 10.9085C13.6217 10.8186 13.683 10.7384 13.7581 10.6725C13.8333 10.6066 13.9209 10.5565 14.0158 10.5249C14.1107 10.4934 14.2109 10.4812 14.3105 10.4889C14.4102 10.4967 14.5073 10.5243 14.5962 10.5701C14.685 10.6159 14.7638 10.679 14.8279 10.7557L17.8853 14.2432L14.8286 17.7435Z" fill="#A13FB9"/>
+                                            <path d="M0.75 3V6.75H23.25V3H0.75ZM3 5.625C2.85166 5.625 2.70666 5.58101 2.58332 5.4986C2.45999 5.41619 2.36386 5.29906 2.30709 5.16201C2.25032 5.02497 2.23547 4.87417 2.26441 4.72868C2.29335 4.5832 2.36478 4.44956 2.46967 4.34467C2.57456 4.23978 2.7082 4.16835 2.85368 4.13941C2.99917 4.11047 3.14997 4.12532 3.28701 4.18209C3.42406 4.23886 3.54119 4.33499 3.6236 4.45832C3.70601 4.58166 3.75 4.72666 3.75 4.875C3.75 5.07391 3.67098 5.26468 3.53033 5.40533C3.38968 5.54598 3.19891 5.625 3 5.625ZM5.25 5.625C5.10166 5.625 4.95666 5.58101 4.83332 5.4986C4.70999 5.41619 4.61386 5.29906 4.55709 5.16201C4.50032 5.02497 4.48547 4.87417 4.51441 4.72868C4.54335 4.5832 4.61478 4.44956 4.71967 4.34467C4.82456 4.23978 4.9582 4.16835 5.10368 4.13941C5.24917 4.11047 5.39997 4.12532 5.53701 4.18209C5.67406 4.23886 5.79119 4.33499 5.8736 4.45832C5.95601 4.58166 6 4.72666 6 4.875C6 5.07391 5.92098 5.26468 5.78033 5.40533C5.63968 5.54598 5.44891 5.625 5.25 5.625ZM7.5 5.625C7.35166 5.625 7.20666 5.58101 7.08332 5.4986C6.95999 5.41619 6.86386 5.29906 6.80709 5.16201C6.75032 5.02497 6.73547 4.87417 6.76441 4.72868C6.79335 4.5832 6.86478 4.44956 6.96967 4.34467C7.07456 4.23978 7.2082 4.16835 7.35368 4.13941C7.49917 4.11047 7.64997 4.12532 7.78701 4.18209C7.92406 4.23886 8.04119 4.33499 8.1236 4.45832C8.20601 4.58166 8.25 4.72666 8.25 4.875C8.25 5.07391 8.17098 5.26468 8.03033 5.40533C7.88968 5.54598 7.69891 5.625 7.5 5.625Z" fill="#A13FB9"/>
+                                        </svg>
+                                    </span>
+
+
+                                    <div class="course-info">
+                                        <p>20 Courses</p>
+                                        <h3>Development</h3>
+                                    </div>
+                                </div>
+
+                                <!-- highlight box 3 -->
+                                <div class="single-highlight-box">
+                                    <!-- icon -->
+                                    <span class="icon-3">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                            <path d="M21 7.875V2.625C17.698 4.94934 13.7862 6.25325 9.75 6.375H6.75V13.875C6.75 16.1625 6.75 19.65 10.9875 21.3375H11.25C11.431 21.3448 11.6085 21.2863 11.7497 21.1729C11.8909 21.0595 11.9864 20.8989 12.0184 20.7206C12.0504 20.5423 12.0168 20.3585 11.9238 20.2031C11.8308 20.0476 11.6847 19.9311 11.5125 19.875C8.25 18.6 8.25 16.0875 8.25 13.875H9.75C13.8052 13.8857 17.7494 15.2005 21 17.625V12.375C21.5967 12.375 22.169 12.1379 22.591 11.716C23.0129 11.294 23.25 10.7217 23.25 10.125C23.25 9.52826 23.0129 8.95597 22.591 8.53401C22.169 8.11205 21.5967 7.875 21 7.875ZM0.75 8.625V11.625C0.75 12.2217 0.987053 12.794 1.40901 13.216C1.83097 13.6379 2.40326 13.875 3 13.875H5.25V6.375H3C2.40326 6.375 1.83097 6.61205 1.40901 7.03401C0.987053 7.45597 0.75 8.02826 0.75 8.625Z" fill="#5C50E4"/>
+                                        </svg>
+                                    </span>
+
+                                    <div class="course-info">
+                                        <p>30 Courses</p>
+                                        <h3>Marketing</h3>
+                                    </div>
+                                </div>
+
+                                <!-- highlight box 1 -->
+                                <div class="single-highlight-box">
+                                    <!-- icon -->
+                                    <span class="icon-1">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                            <path d="M0.75 8.25V21H23.25V8.25H0.75ZM12.75 18H5.25C5.05109 18 4.86032 17.921 4.71967 17.7803C4.57902 17.6397 4.5 17.4489 4.5 17.25C4.5 17.0511 4.57902 16.8603 4.71967 16.7197C4.86032 16.579 5.05109 16.5 5.25 16.5H12.75C12.9489 16.5 13.1397 16.579 13.2803 16.7197C13.421 16.8603 13.5 17.0511 13.5 17.25C13.5 17.4489 13.421 17.6397 13.2803 17.7803C13.1397 17.921 12.9489 18 12.75 18ZM18.75 15H5.25C5.05109 15 4.86032 14.921 4.71967 14.7803C4.57902 14.6397 4.5 14.4489 4.5 14.25C4.5 14.0511 4.57902 13.8603 4.71967 13.7197C4.86032 13.579 5.05109 13.5 5.25 13.5H18.75C18.9489 13.5 19.1397 13.579 19.2803 13.7197C19.421 13.8603 19.5 14.0511 19.5 14.25C19.5 14.4489 19.421 14.6397 19.2803 14.7803C19.1397 14.921 18.9489 15 18.75 15ZM18.75 12H5.25C5.05109 12 4.86032 11.921 4.71967 11.7803C4.57902 11.6397 4.5 11.4489 4.5 11.25C4.5 11.0511 4.57902 10.8603 4.71967 10.7197C4.86032 10.579 5.05109 10.5 5.25 10.5H18.75C18.9489 10.5 19.1397 10.579 19.2803 10.7197C19.421 10.8603 19.5 11.0511 19.5 11.25C19.5 11.4489 19.421 11.6397 19.2803 11.7803C19.1397 11.921 18.9489 12 18.75 12Z" fill="#FFB900"/>
+                                            <path d="M0.75 3V6.75H23.25V3H0.75ZM3 5.625C2.85166 5.625 2.70666 5.58101 2.58332 5.4986C2.45999 5.41619 2.36386 5.29906 2.30709 5.16201C2.25032 5.02497 2.23547 4.87417 2.26441 4.72868C2.29335 4.5832 2.36478 4.44956 2.46967 4.34467C2.57456 4.23978 2.7082 4.16835 2.85368 4.13941C2.99917 4.11047 3.14997 4.12532 3.28701 4.18209C3.42406 4.23886 3.54119 4.33499 3.6236 4.45832C3.70601 4.58166 3.75 4.72666 3.75 4.875C3.75 5.07391 3.67098 5.26468 3.53033 5.40533C3.38968 5.54598 3.19891 5.625 3 5.625ZM5.25 5.625C5.10166 5.625 4.95666 5.58101 4.83332 5.4986C4.70999 5.41619 4.61386 5.29906 4.55709 5.16201C4.50032 5.02497 4.48547 4.87417 4.51441 4.72868C4.54335 4.5832 4.61478 4.44956 4.71967 4.34467C4.82456 4.23978 4.9582 4.16835 5.10368 4.13941C5.24917 4.11047 5.39997 4.12532 5.53701 4.18209C5.67406 4.23886 5.79119 4.33499 5.8736 4.45832C5.95601 4.58166 6 4.72666 6 4.875C6 5.07391 5.92098 5.26468 5.78033 5.40533C5.63968 5.54598 5.44891 5.625 5.25 5.625ZM7.5 5.625C7.35166 5.625 7.20666 5.58101 7.08332 5.4986C6.95999 5.41619 6.86386 5.29906 6.80709 5.16201C6.75032 5.02497 6.73547 4.87417 6.76441 4.72868C6.79335 4.5832 6.86478 4.44956 6.96967 4.34467C7.07456 4.23978 7.2082 4.16835 7.35368 4.13941C7.49917 4.11047 7.64997 4.12532 7.78701 4.18209C7.92406 4.23886 8.04119 4.33499 8.1236 4.45832C8.20601 4.58166 8.25 4.72666 8.25 4.875C8.25 5.07391 8.17098 5.26468 8.03033 5.40533C7.88968 5.54598 7.69891 5.625 7.5 5.625Z" fill="#FFB900"/>
+                                        </svg>
+                                    </span>
+
+
+                                    <div class="course-info">
+                                        <p>20 Courses</p>
+                                        <h3>UI/UX Design</h3>
+                                    </div>
+                                </div>
+
+                                <!-- highlight box 2 -->
+                                <div class="single-highlight-box">
+                                    <!-- icon -->
+                                    <span class="icon-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                            <path d="M0.75 8.25V21H23.25V8.25H0.75ZM10.3286 16.7569C10.3956 16.8307 10.4472 16.9171 10.4804 17.0111C10.5136 17.1051 10.5277 17.2048 10.5219 17.3043C10.5161 17.4038 10.4906 17.5012 10.4467 17.5907C10.4029 17.6802 10.3417 17.7601 10.2666 17.8257C10.1915 17.8913 10.1041 17.9412 10.0095 17.9726C9.91491 18.004 9.81499 18.0163 9.7156 18.0086C9.61622 18.001 9.51935 17.9736 9.43067 17.9281C9.34199 17.8825 9.26327 17.8198 9.19913 17.7435L6.1425 14.2448L9.19987 10.7573C9.26397 10.6805 9.34276 10.6174 9.4316 10.5716C9.52044 10.5258 9.61755 10.4982 9.71721 10.4904C9.81687 10.4827 9.91708 10.4949 10.0119 10.5264C10.1068 10.558 10.1944 10.6081 10.2696 10.674C10.3448 10.7399 10.4061 10.8201 10.4498 10.91C10.4935 10.9999 10.5189 11.0976 10.5243 11.1974C10.5297 11.2972 10.5151 11.3971 10.4814 11.4912C10.4477 11.5853 10.3955 11.6717 10.3279 11.7454L8.13525 14.2463L10.3286 16.7569ZM14.8286 17.7435C14.7645 17.8198 14.6858 17.8825 14.5971 17.9281C14.5084 17.9736 14.4115 18.001 14.3121 18.0086C14.2128 18.0163 14.1128 18.004 14.0182 17.9726C13.9236 17.9412 13.8362 17.8913 13.7612 17.8257C13.6861 17.7601 13.6248 17.6802 13.581 17.5907C13.5372 17.5012 13.5116 17.4038 13.5058 17.3043C13.5 17.2048 13.5142 17.1051 13.5474 17.0111C13.5805 16.9171 13.6321 16.8307 13.6991 16.7569L15.8925 14.2463L13.6999 11.7439C13.6323 11.6702 13.5801 11.5838 13.5463 11.4897C13.5126 11.3956 13.498 11.2957 13.5035 11.1959C13.5089 11.0961 13.5342 10.9984 13.5779 10.9085C13.6217 10.8186 13.683 10.7384 13.7581 10.6725C13.8333 10.6066 13.9209 10.5565 14.0158 10.5249C14.1107 10.4934 14.2109 10.4812 14.3105 10.4889C14.4102 10.4967 14.5073 10.5243 14.5962 10.5701C14.685 10.6159 14.7638 10.679 14.8279 10.7557L17.8853 14.2432L14.8286 17.7435Z" fill="#A13FB9"/>
+                                            <path d="M0.75 3V6.75H23.25V3H0.75ZM3 5.625C2.85166 5.625 2.70666 5.58101 2.58332 5.4986C2.45999 5.41619 2.36386 5.29906 2.30709 5.16201C2.25032 5.02497 2.23547 4.87417 2.26441 4.72868C2.29335 4.5832 2.36478 4.44956 2.46967 4.34467C2.57456 4.23978 2.7082 4.16835 2.85368 4.13941C2.99917 4.11047 3.14997 4.12532 3.28701 4.18209C3.42406 4.23886 3.54119 4.33499 3.6236 4.45832C3.70601 4.58166 3.75 4.72666 3.75 4.875C3.75 5.07391 3.67098 5.26468 3.53033 5.40533C3.38968 5.54598 3.19891 5.625 3 5.625ZM5.25 5.625C5.10166 5.625 4.95666 5.58101 4.83332 5.4986C4.70999 5.41619 4.61386 5.29906 4.55709 5.16201C4.50032 5.02497 4.48547 4.87417 4.51441 4.72868C4.54335 4.5832 4.61478 4.44956 4.71967 4.34467C4.82456 4.23978 4.9582 4.16835 5.10368 4.13941C5.24917 4.11047 5.39997 4.12532 5.53701 4.18209C5.67406 4.23886 5.79119 4.33499 5.8736 4.45832C5.95601 4.58166 6 4.72666 6 4.875C6 5.07391 5.92098 5.26468 5.78033 5.40533C5.63968 5.54598 5.44891 5.625 5.25 5.625ZM7.5 5.625C7.35166 5.625 7.20666 5.58101 7.08332 5.4986C6.95999 5.41619 6.86386 5.29906 6.80709 5.16201C6.75032 5.02497 6.73547 4.87417 6.76441 4.72868C6.79335 4.5832 6.86478 4.44956 6.96967 4.34467C7.07456 4.23978 7.2082 4.16835 7.35368 4.13941C7.49917 4.11047 7.64997 4.12532 7.78701 4.18209C7.92406 4.23886 8.04119 4.33499 8.1236 4.45832C8.20601 4.58166 8.25 4.72666 8.25 4.875C8.25 5.07391 8.17098 5.26468 8.03033 5.40533C7.88968 5.54598 7.69891 5.625 7.5 5.625Z" fill="#A13FB9"/>
+                                        </svg>
+                                    </span>
+
+
+                                    <div class="course-info">
+                                        <p>20 Courses</p>
+                                        <h3>Development</h3>
+                                    </div>
+                                </div>
+
+                                <!-- highlight box 3 -->
+                                <div class="single-highlight-box">
+                                    <!-- icon -->
+                                    <span class="icon-3">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                            <path d="M21 7.875V2.625C17.698 4.94934 13.7862 6.25325 9.75 6.375H6.75V13.875C6.75 16.1625 6.75 19.65 10.9875 21.3375H11.25C11.431 21.3448 11.6085 21.2863 11.7497 21.1729C11.8909 21.0595 11.9864 20.8989 12.0184 20.7206C12.0504 20.5423 12.0168 20.3585 11.9238 20.2031C11.8308 20.0476 11.6847 19.9311 11.5125 19.875C8.25 18.6 8.25 16.0875 8.25 13.875H9.75C13.8052 13.8857 17.7494 15.2005 21 17.625V12.375C21.5967 12.375 22.169 12.1379 22.591 11.716C23.0129 11.294 23.25 10.7217 23.25 10.125C23.25 9.52826 23.0129 8.95597 22.591 8.53401C22.169 8.11205 21.5967 7.875 21 7.875ZM0.75 8.625V11.625C0.75 12.2217 0.987053 12.794 1.40901 13.216C1.83097 13.6379 2.40326 13.875 3 13.875H5.25V6.375H3C2.40326 6.375 1.83097 6.61205 1.40901 7.03401C0.987053 7.45597 0.75 8.02826 0.75 8.625Z" fill="#5C50E4"/>
+                                        </svg>
+                                    </span>
+
+                                    <div class="course-info">
+                                        <p>30 Courses</p>
+                                        <h3>Marketing</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- hero context -->
+                <div class="hero-context">
+                    <h1>Learn without limits and spread knowledge.</h1>
+                    <p>Build new skills for that “this is my year” feeling with courses, certificates, and degrees from world-class universities and companies.</p>
+
+                    <div class="hero-cta">
+                        <!-- see courses btn -->
+                        <a href="courses.html" class="see-courses-btn btn active">See Courses</a>
+
+                        <div class="watch-video">
+                            <!-- watch video btn -->
+                            <button  id="playButton"  type="button" class="watch-video-btn">
+                                <!-- play icon -->
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="72" height="72" viewBox="0 0 72 72" fill="none">
+                                        <g filter="url(#filter0_d_4_204)">
+                                            <circle cx="36" cy="28" r="20" fill="white"/>
+                                        </g>
+                                        <path d="M41.9861 28L32.9741 33.1753L32.9982 22.783L41.9861 28Z" fill="#FFB900"/>
+                                        <defs>
+                                            <filter id="filter0_d_4_204" x="0" y="0" width="72" height="72" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                            <feOffset dy="8"/>
+                                            <feGaussianBlur stdDeviation="8"/>
+                                            <feComposite in2="hardAlpha" operator="out"/>
+                                            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.07 0"/>
+                                            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_4_204"/>
+                                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_4_204" result="shape"/>
+                                            </filter>
+                                        </defs>
+                                    </svg>
+                                </span>
+                                Watch Video
+                            </button>
+
+                            <div id="videoPopup" class="video-popup">
+                                <div class="popup-inner">
+                                    <div class="popup-content">
+                                        <span id="closeBtn" class="close">&times;</span>
+
+                                        <!-- video -->
+                                        <div class="videoFrame">
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- counter -->
+                    <div class="recent-engagament">
+                        <h4>Recent engagement</h4>
+
+                        <div class="counter">
+                            <h2>50K <span>Students</span></h2>
+                            <h2>70+ <span>Courses</span></h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- feature area  -->
+    <section class="feature-area">
+        <div class="container">
+            <div class="feature-wrapper">
+                <div class="feature-intro-wrapper">
+                    <!-- feature intro -->
+                    <div class="feature-intro">
+                        <h2>Our popular courses</h2>
+                        <p>Build new skills with new trendy courses and shine <br>for the next future career.</p>
+                    </div>
+
+                    <!-- slider nav -->
+                    <div class="slider-nav">
+                        <button class="mm-slick-prev">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+                            </svg>
+                        </button>
+
+                        <button class="mm-slick-next active">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 active-svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="course-slider">
+                    <div class="course-slider-wrapper">
+                        <!-- single slide item 1 -->
+                        <div class="single-slide-box">
+                            <div class="single-slide">
+                                <div class="slide-image">
+                                    <img src="assets/img/slide-image-1.png" alt="Slide Image">
+                                </div>
+
+                                <div class="slide-context">
+                                    <div class="slide-heading">
+                                        <h3>Basic web design</h3>
+                                        <span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17" fill="none">
+                                                <path d="M9 0L11.0206 6.21885H17.5595L12.2694 10.0623L14.2901 16.2812L9 12.4377L3.70993 16.2812L5.73056 10.0623L0.440492 6.21885H6.97937L9 0Z" fill="#FEA31B"/>
+                                            </svg>
+                                            4.5
+                                        </span>
+                                    </div>
+
+                                    <p>Get the best course, gain knowledge and shine for your future career.</p>
+
+                                    <div class="slide-cta">
+                                        <h3>$120.75</h3>
+                                        <a href="" class="btn">Book Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- single slide item 2 -->
+                        <div class="single-slide-box">
+                            <div class="single-slide">
+                                <div class="slide-image">
+                                    <img src="assets/img/slide-image-2.png" alt="Slide Image">
+                                </div>
+
+                                <div class="slide-context">
+                                    <div class="slide-heading">
+                                        <h3>UI/UX design</h3>
+                                        <span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17" fill="none">
+                                                <path d="M9 0L11.0206 6.21885H17.5595L12.2694 10.0623L14.2901 16.2812L9 12.4377L3.70993 16.2812L5.73056 10.0623L0.440492 6.21885H6.97937L9 0Z" fill="#FEA31B"/>
+                                            </svg>
+                                            4.5
+                                        </span>
+                                    </div>
+
+                                    <p>Get the best course, gain knowledge and shine for your future career.</p>
+
+                                    <div class="slide-cta">
+                                        <h3>$120.75</h3>
+                                        <a href="" class="btn">Book Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- single slide item 3 -->
+                        <div class="single-slide-box">
+                            <div class="single-slide">
+                                <div class="slide-image">
+                                    <img src="assets/img/slide-image-3.png" alt="Slide Image">
+                                </div>
+
+                                <div class="slide-context">
+                                    <div class="slide-heading">
+                                        <h3>Web App design</h3>
+                                        <span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17" fill="none">
+                                                <path d="M9 0L11.0206 6.21885H17.5595L12.2694 10.0623L14.2901 16.2812L9 12.4377L3.70993 16.2812L5.73056 10.0623L0.440492 6.21885H6.97937L9 0Z" fill="#FEA31B"/>
+                                            </svg>
+                                            4.5
+                                        </span>
+                                    </div>
+
+                                    <p>Get the best course, gain knowledge and shine for your future career.</p>
+
+                                    <div class="slide-cta">
+                                        <h3>$120.75</h3>
+                                        <a href="" class="btn">Book Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- single slide item 4 -->
+                        <div class="single-slide-box">
+                            <div class="single-slide">
+                                <div class="slide-image">
+                                    <img src="assets/img/slide-image-2.png" alt="Slide Image">
+                                </div>
+
+                                <div class="slide-context">
+                                    <div class="slide-heading">
+                                        <h3>UI/UX design</h3>
+                                        <span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17" fill="none">
+                                                <path d="M9 0L11.0206 6.21885H17.5595L12.2694 10.0623L14.2901 16.2812L9 12.4377L3.70993 16.2812L5.73056 10.0623L0.440492 6.21885H6.97937L9 0Z" fill="#FEA31B"/>
+                                            </svg>
+                                            4.5
+                                        </span>
+                                    </div>
+
+                                    <p>Get the best course, gain knowledge and shine for your future career.</p>
+
+                                    <div class="slide-cta">
+                                        <h3>$120.75</h3>
+                                        <a href="" class="btn">Book Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- testimonial -->
+    <section class="testimonial-area">
+        <div class="container">
+            <div class="testimonial-slider">
+                <!-- single slide item 1 -->
+                <div class="testimonial-slide-single">
+                    <div class="user">
+                        <div class="user-image">
+                            <img src="assets/img/user-1.png" alt="User Image">
+                        </div>
+
+                        <h3>Peter Moor</h3>
+                        <p>Student of Web Design</p>
+
+                        
+                    </div>
+
+                    <div class="testimonial-context">
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="28" viewBox="0 0 30 28" fill="none">
+                                <path d="M12.9168 1.23505V6.26199C12.9168 6.94407 12.3663 7.49652 11.6875 7.49652C9.26544 7.49652 7.94779 9.99114 7.76491 14.9155H11.6875C12.3662 14.9155 12.9168 15.4688 12.9168 16.1501V26.7647C12.9168 27.4465 12.3663 27.999 11.6875 27.999H1.22938C0.550795 27.999 1.90735e-06 27.4459 1.90735e-06 26.7647V16.15C1.90735e-06 13.7896 0.237282 11.6235 0.703081 9.71055C1.1816 7.74949 1.91613 6.035 2.8858 4.61422C3.88306 3.15417 5.13161 2.00845 6.59457 1.21054C8.06863 0.407543 9.78211 0 11.688 0C12.3662 0.000516891 12.9168 0.553486 12.9168 1.23505ZM28.771 7.49696C29.4496 7.49696 30 6.94407 30 6.26294V1.23497C30 0.553488 29.4496 0.000951767 28.771 0.000951767C26.866 0.000951767 25.1517 0.408579 23.6785 1.21149C22.2148 2.00931 20.9664 3.15408 19.9693 4.61517C18.999 6.03595 18.2645 7.75052 17.786 9.71254C17.32 11.6255 17.0832 13.7917 17.0832 16.151V26.7657C17.0832 27.4476 17.6341 28 18.3125 28H28.771C29.4496 28 30 27.447 30 26.7657V16.151C30 15.4693 29.4496 14.9165 28.771 14.9165H24.9035C25.0841 9.99165 26.3828 7.49696 28.771 7.49696Z" fill="#634700"/>
+                            </svg>
+                        </span>
+                        
+                        <p>Not only does my resume look impressive—filled with the names and logos of world-class institutions—but these certificates also bring me closer to my career goals by validating the skills I've learned." </p>
+                    </div>
+                </div>
+
+                <!-- single slide item 2 -->
+                <div class="testimonial-slide-single">
+                    <div class="user">
+                        <div class="user-image">
+                            <img src="assets/img/user-2.png" alt="User Image">
+                        </div>
+
+                        <h3>Bombardino Crocodilo</h3>
+                        <p>Student of UI/UX design</p>
+                    </div>
+
+                    <div class="testimonial-context">
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="28" viewBox="0 0 30 28" fill="none">
+                                <path d="M12.9168 1.23505V6.26199C12.9168 6.94407 12.3663 7.49652 11.6875 7.49652C9.26544 7.49652 7.94779 9.99114 7.76491 14.9155H11.6875C12.3662 14.9155 12.9168 15.4688 12.9168 16.1501V26.7647C12.9168 27.4465 12.3663 27.999 11.6875 27.999H1.22938C0.550795 27.999 1.90735e-06 27.4459 1.90735e-06 26.7647V16.15C1.90735e-06 13.7896 0.237282 11.6235 0.703081 9.71055C1.1816 7.74949 1.91613 6.035 2.8858 4.61422C3.88306 3.15417 5.13161 2.00845 6.59457 1.21054C8.06863 0.407543 9.78211 0 11.688 0C12.3662 0.000516891 12.9168 0.553486 12.9168 1.23505ZM28.771 7.49696C29.4496 7.49696 30 6.94407 30 6.26294V1.23497C30 0.553488 29.4496 0.000951767 28.771 0.000951767C26.866 0.000951767 25.1517 0.408579 23.6785 1.21149C22.2148 2.00931 20.9664 3.15408 19.9693 4.61517C18.999 6.03595 18.2645 7.75052 17.786 9.71254C17.32 11.6255 17.0832 13.7917 17.0832 16.151V26.7657C17.0832 27.4476 17.6341 28 18.3125 28H28.771C29.4496 28 30 27.447 30 26.7657V16.151C30 15.4693 29.4496 14.9165 28.771 14.9165H24.9035C25.0841 9.99165 26.3828 7.49696 28.771 7.49696Z" fill="#634700"/>
+                            </svg>
+                        </span>
+                        
+                        <p>Of course Not only does my resume look impressive—filled with the names and logos of world-class institutions—but these certificates also bring me closer to my career goals by validating the skills I've learned." </p>
+                    </div>
+                </div>
+
+                <!-- single slide item 1 -->
+                <div class="testimonial-slide-single">
+                    <div class="user">
+                        <div class="user-image">
+                            <img src="assets/img/user-3.png" alt="User Image">
+                        </div>
+
+                        <h3>Ballerina Cupucina</h3>
+                        <p>Student of Web App Design</p>
+                    </div>
+
+                    <div class="testimonial-context">
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="28" viewBox="0 0 30 28" fill="none">
+                                <path d="M12.9168 1.23505V6.26199C12.9168 6.94407 12.3663 7.49652 11.6875 7.49652C9.26544 7.49652 7.94779 9.99114 7.76491 14.9155H11.6875C12.3662 14.9155 12.9168 15.4688 12.9168 16.1501V26.7647C12.9168 27.4465 12.3663 27.999 11.6875 27.999H1.22938C0.550795 27.999 1.90735e-06 27.4459 1.90735e-06 26.7647V16.15C1.90735e-06 13.7896 0.237282 11.6235 0.703081 9.71055C1.1816 7.74949 1.91613 6.035 2.8858 4.61422C3.88306 3.15417 5.13161 2.00845 6.59457 1.21054C8.06863 0.407543 9.78211 0 11.688 0C12.3662 0.000516891 12.9168 0.553486 12.9168 1.23505ZM28.771 7.49696C29.4496 7.49696 30 6.94407 30 6.26294V1.23497C30 0.553488 29.4496 0.000951767 28.771 0.000951767C26.866 0.000951767 25.1517 0.408579 23.6785 1.21149C22.2148 2.00931 20.9664 3.15408 19.9693 4.61517C18.999 6.03595 18.2645 7.75052 17.786 9.71254C17.32 11.6255 17.0832 13.7917 17.0832 16.151V26.7657C17.0832 27.4476 17.6341 28 18.3125 28H28.771C29.4496 28 30 27.447 30 26.7657V16.151C30 15.4693 29.4496 14.9165 28.771 14.9165H24.9035C25.0841 9.99165 26.3828 7.49696 28.771 7.49696Z" fill="#634700"/>
+                            </svg>
+                        </span>
+                        
+                        <p>My resume not only does look impressive—filled with the names and logos of world-class institutions—but these certificates also bring me closer to my career goals by validating the skills I've learned." </p>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="nav-dots-wrapper"></div>
+        </div>
+    </section>
+
+    <!-- about area part 1 -->
+    <section class="about-area">
+        <div class="container">
+            <div class="about-wrapper">
+                <div class="image-box">
+                    <img src="assets/img/about-image-1.png" alt="Man Working On Laptop"  class="image1">
+                    <img src="assets/img/about-image-2.png" alt="Man Working On Laptop">
+                </div>
+
+                <div class="main-context">
+                    <h2>Learner outcomes through our awesome platform</h2>
+                    <p>87% of people learning for professional development report career benefits like getting a promotion, a raise, or starting a new career.</p>
+
+                    <a href="" class="impact-report">Lesson Impact Report (2022)</a>
+
+                    <a href="" class="btn">Sign Up</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- about area part 2 -->
+    <section class="about-area part2">
+        <div class="container">
+            <div class="about-wrapper">
+                <div class="image-box">
+                    <img src="assets/img/about-image-3.png" alt="Man Working On Laptop">
+                </div>
+
+                <div class="main-context">
+                    <h2>Take the next step toward your personal and professional goals with Lesson.</h2>
+                    <p>Take the next step toward. Join now to receive personalized  and more recommendations from the full Coursera catalog.</p>
+
+                    <a href="" class="btn">Join Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- blog area -->
+    <section class="blog-area">
+        <div class="container">
+            <!-- blog intro -->
+            <div class="blog-intro">
+                <h2>Our blog</h2>
+                <p>Read our regular travel blog and know the latest update of tour and travel</p>
+            </div>
+            
+            <!-- blog slider -->
+            <div class="blog-slider">
+                <div class="blog-slider-wrapper">
+                    <!-- single slide item 1 -->
+                    <div class="single-slide-box">
+                        <div class="single-slide">
+                            <div class="slide-image">
+                                <img src="assets/img/blog-image-1.png" alt="Slide Image">
+                            </div>
+
+                            <div class="slide-context">
+                                <article>
+                                    <span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="6" height="6" viewBox="0 0 6 6" fill="none">
+                                            <circle cx="3" cy="3" r="3" fill="#FFB900"/>
+                                        </svg>
+                                    </span>
+                                    <time datetime="2025-05-24">21 November 2021</time>
+
+                                    <!-- custom line -->
+                                    <div class="custom-line"></div>
+
+                                    <h2>How to become a pro web designer in 2022 and get remot job?</h2>
+
+                                    <a href="" class="btn">Read More</a>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- single slide item 2 -->
+                    <div class="single-slide-box">
+                        <div class="single-slide">
+                            <div class="slide-image">
+                                <img src="assets/img/blog-image-2.png" alt="Slide Image">
+                            </div>
+
+                            <div class="slide-context">
+                                <article>
+                                    <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="6" height="6" viewBox="0 0 6 6" fill="none">
+                                        <circle cx="3" cy="3" r="3" fill="#FFB900"/>
+                                        </svg>
+                                    </span>
+                                    <time datetime="2025-05-24">21 November 2021</time>
+
+                                    <!-- custom line -->
+                                    <div class="custom-line"></div>
+
+                                    <h2>How to become a pro web designer in 2022 and get remot job?</h2>
+
+                                    <a href="" class="btn">Read More</a>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- single slide item 3 -->
+                    <div class="single-slide-box">
+                        <div class="single-slide">
+                            <div class="slide-image">
+                                <img src="assets/img/blog-image-3.png" alt="Slide Image">
+                            </div>
+
+                            <div class="slide-context">
+                                <article>
+                                    <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="6" height="6" viewBox="0 0 6 6" fill="none">
+                                        <circle cx="3" cy="3" r="3" fill="#FFB900"/>
+                                        </svg>
+                                    </span>
+                                    <time datetime="2025-05-24">21 November 2021</time>
+
+                                    <!-- custom line -->
+                                    <div class="custom-line"></div>
+
+                                    <h2>How to become a pro web designer in 2022 and get remot job?</h2>
+
+                                    <a href="" class="btn">Read More</a>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- single slide item 4 -->
+                    <div class="single-slide-box">
+                        <div class="single-slide">
+                            <div class="slide-image">
+                                <img src="assets/img/blog-image-2.png" alt="Slide Image">
+                            </div>
+
+                            <div class="slide-context">
+                                <article>
+                                    <span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="6" height="6" viewBox="0 0 6 6" fill="none">
+                                            <circle cx="3" cy="3" r="3" fill="#FFB900"/>
+                                        </svg>
+                                    </span>
+                                    <time datetime="2025-05-24">21 November 2021</time>
+
+                                    <!-- custom line -->
+                                    <div class="custom-line"></div>
+
+                                    <h2>How to become a pro web designer in 2022 and get remot job?</h2>
+
+                                    <a href="" class="btn">Read More</a>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="blog-nav-dots-wrapper"></div>
+        </div>
+    </section>
+
+    <!-- footer area -->
+    <footer>
+        <div class="container">
+            <div class="footer-main">
+                <div class="footer-branding">
+                    <div class="footer-logo">
+                        <img src="assets/img/footer-logo.png" alt="Site Logo">
+                    </div>
+
+                    <p>Need to help for your dream Career? <br> trust us. With Lesson, study becomes <br> a lot easier with us.</p>
+
+                    <div class="footer-social">
+                        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <div class="footer-company">
+                        <h4>Company</h4>
+                        <!-- border line -->
+                        <div class="border-line"></div>
+
+                        <ul>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Features</a></li>
+                            <li><a href="#">Our Pricing</a></li>
+                            <li><a href="#">Latest News</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-support">
+                        <h4>Support</h4>
+                        <!-- border line -->
+                        <div class="border-line"></div>
+
+                        <ul>
+                            <li><a href="#">FAQ’s</a></li>
+                            <li><a href="#">Terms & Conditions</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="">Contact Us</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-address">
+                        <h4>Address</h4>
+                        <!-- border line -->
+                        <div class="border-line"></div>
+                        
+                        <address>
+                            <p><strong>Location:</strong> 27 Division St, New York, NY 10002, USA</p>
+                            <p><strong>Email:</strong> <a href="mailto:email@gmail.com">email@gmail.com</a></p>
+                            <p><strong>Phone:</strong> <a href="tel:0001234567890">+000 1234 567 890</a></p>
+                        </address>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="footer-foot">
+                Copyright ©2025 webdesign.gdn All rights reserved | Developed by Zahid Hasan
+            </div>
+        </div>
+    </footer>
+
+    <!-- main js -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,400&family=Sen:wght@700&display=swap" rel="stylesheet">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- jquery -->
+    <script src="assets/js/jquery.min.js"></script>
+    <!-- slick -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Lesson</title>
+</head>
+<body>
+    <!-- header area -->
+    <header>
+        <div class="container">
+            <div class="header-wrapper">
+
+                <div class="Logo-wrapper">
+                    <!-- mobile toggle icon -->
+                    <button id="mobileToggle" type="button" class="mobile-toggle-icon">
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="#2E2100" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                        </svg>
+                        </span>
+                    </button>
+
+                    <!-- site logo -->
+                    <div class="site-logo">
+                        <a href="index.html"><img src="assets/img/site-logo.png" alt="Site Logo"></a>
+                    </div>
+                </div>
+
+                <div class="menu-wrapper">
+                    <!-- main menu -->
+                    <nav class="main-menu">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="courses.html">Courses</a></li>
+                            <li><a href="pricing.html">Pricing</a></li>
+                            <li><a href="reviews.html">Reviews</a></li>
+                        </ul>
+                    </nav>
+                
+                    <!-- sign up btn -->
+                    <a href="" class="sign-up btn">Sign Up</a>
+                </div>
+            </div>
+        </div>
+
+        <div id="mobileMenuToggle" class="mobile-menu">
+            <!-- main menu -->
+            <nav class="mobile-menu-toggle">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="reviews.html">Reviews</a></li>
+                </ul>
+
+                <button class="mobile-menu-close"><i class="fa-solid fa-xmark"></i></button>
+            </nav>
+
+            
+        </div>
+    </header>
+
+    <!-- feature area  -->
+    <section class="feature-area course-page">
+        <div class="container">
+            <div class="feature-wrapper">
+                <div class="feature-intro-wrapper">
+                    <!-- feature intro -->
+                    <div class="feature-intro">
+                        <h2>Our popular courses</h2>
+                        <p>Build new skills with new trendy courses and shine <br>for the next future career.</p>
+                    </div>
+
+                    <!-- slider nav -->
+                    <div class="slider-nav">
+                        <button class="mm-slick-prev">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+                            </svg>
+                        </button>
+
+                        <button class="mm-slick-next active">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 active-svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="course-slider">
+                    <div class="course-slider-wrapper">
+                        <!-- single slide item 1 -->
+                        <div class="single-slide-box">
+                            <div class="single-slide">
+                                <div class="slide-image">
+                                    <img src="assets/img/slide-image-1.png" alt="Slide Image">
+                                </div>
+
+                                <div class="slide-context">
+                                    <div class="slide-heading">
+                                        <h3>Basic web design</h3>
+                                        <span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17" fill="none">
+                                                <path d="M9 0L11.0206 6.21885H17.5595L12.2694 10.0623L14.2901 16.2812L9 12.4377L3.70993 16.2812L5.73056 10.0623L0.440492 6.21885H6.97937L9 0Z" fill="#FEA31B"/>
+                                            </svg>
+                                            4.5
+                                        </span>
+                                    </div>
+
+                                    <p>Get the best course, gain knowledge and shine for your future career.</p>
+
+                                    <div class="slide-cta">
+                                        <h3>$120.75</h3>
+                                        <a href="" class="btn">Book Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- single slide item 2 -->
+                        <div class="single-slide-box">
+                            <div class="single-slide">
+                                <div class="slide-image">
+                                    <img src="assets/img/slide-image-2.png" alt="Slide Image">
+                                </div>
+
+                                <div class="slide-context">
+                                    <div class="slide-heading">
+                                        <h3>UI/UX design</h3>
+                                        <span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17" fill="none">
+                                                <path d="M9 0L11.0206 6.21885H17.5595L12.2694 10.0623L14.2901 16.2812L9 12.4377L3.70993 16.2812L5.73056 10.0623L0.440492 6.21885H6.97937L9 0Z" fill="#FEA31B"/>
+                                            </svg>
+                                            4.5
+                                        </span>
+                                    </div>
+
+                                    <p>Get the best course, gain knowledge and shine for your future career.</p>
+
+                                    <div class="slide-cta">
+                                        <h3>$120.75</h3>
+                                        <a href="" class="btn">Book Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- single slide item 3 -->
+                        <div class="single-slide-box">
+                            <div class="single-slide">
+                                <div class="slide-image">
+                                    <img src="assets/img/slide-image-3.png" alt="Slide Image">
+                                </div>
+
+                                <div class="slide-context">
+                                    <div class="slide-heading">
+                                        <h3>Web App design</h3>
+                                        <span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17" fill="none">
+                                                <path d="M9 0L11.0206 6.21885H17.5595L12.2694 10.0623L14.2901 16.2812L9 12.4377L3.70993 16.2812L5.73056 10.0623L0.440492 6.21885H6.97937L9 0Z" fill="#FEA31B"/>
+                                            </svg>
+                                            4.5
+                                        </span>
+                                    </div>
+
+                                    <p>Get the best course, gain knowledge and shine for your future career.</p>
+
+                                    <div class="slide-cta">
+                                        <h3>$120.75</h3>
+                                        <a href="" class="btn">Book Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- single slide item 4 -->
+                        <div class="single-slide-box">
+                            <div class="single-slide">
+                                <div class="slide-image">
+                                    <img src="assets/img/slide-image-2.png" alt="Slide Image">
+                                </div>
+
+                                <div class="slide-context">
+                                    <div class="slide-heading">
+                                        <h3>UI/UX design</h3>
+                                        <span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17" fill="none">
+                                                <path d="M9 0L11.0206 6.21885H17.5595L12.2694 10.0623L14.2901 16.2812L9 12.4377L3.70993 16.2812L5.73056 10.0623L0.440492 6.21885H6.97937L9 0Z" fill="#FEA31B"/>
+                                            </svg>
+                                            4.5
+                                        </span>
+                                    </div>
+
+                                    <p>Get the best course, gain knowledge and shine for your future career.</p>
+
+                                    <div class="slide-cta">
+                                        <h3>$120.75</h3>
+                                        <a href="" class="btn">Book Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- about area part 2 -->
+    <section class="about-area part2">
+        <div class="container">
+            <div class="about-wrapper">
+                <div class="image-box">
+                    <img src="assets/img/about-image-3.png" alt="Man Working On Laptop">
+                </div>
+
+                <div class="main-context">
+                    <h2>Take the next step toward your personal and professional goals with Lesson.</h2>
+                    <p>Take the next step toward. Join now to receive personalized  and more recommendations from the full Coursera catalog.</p>
+
+                    <a href="" class="btn">Join Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- blog area -->
+    <section class="blog-area">
+        <div class="container">
+            <!-- blog intro -->
+            <div class="blog-intro">
+                <h2>Our blog</h2>
+                <p>Read our regular travel blog and know the latest update of tour and travel</p>
+            </div>
+            
+            <!-- blog slider -->
+            <div class="blog-slider">
+                <div class="blog-slider-wrapper">
+                    <!-- single slide item 1 -->
+                    <div class="single-slide-box">
+                        <div class="single-slide">
+                            <div class="slide-image">
+                                <img src="assets/img/blog-image-1.png" alt="Slide Image">
+                            </div>
+
+                            <div class="slide-context">
+                                <article>
+                                    <span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="6" height="6" viewBox="0 0 6 6" fill="none">
+                                            <circle cx="3" cy="3" r="3" fill="#FFB900"/>
+                                        </svg>
+                                    </span>
+                                    <time datetime="2025-05-24">21 November 2021</time>
+
+                                    <!-- custom line -->
+                                    <div class="custom-line"></div>
+
+                                    <h2>How to become a pro web designer in 2022 and get remot job?</h2>
+
+                                    <a href="" class="btn">Read More</a>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- single slide item 2 -->
+                    <div class="single-slide-box">
+                        <div class="single-slide">
+                            <div class="slide-image">
+                                <img src="assets/img/blog-image-2.png" alt="Slide Image">
+                            </div>
+
+                            <div class="slide-context">
+                                <article>
+                                    <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="6" height="6" viewBox="0 0 6 6" fill="none">
+                                        <circle cx="3" cy="3" r="3" fill="#FFB900"/>
+                                        </svg>
+                                    </span>
+                                    <time datetime="2025-05-24">21 November 2021</time>
+
+                                    <!-- custom line -->
+                                    <div class="custom-line"></div>
+
+                                    <h2>How to become a pro web designer in 2022 and get remot job?</h2>
+
+                                    <a href="" class="btn">Read More</a>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- single slide item 3 -->
+                    <div class="single-slide-box">
+                        <div class="single-slide">
+                            <div class="slide-image">
+                                <img src="assets/img/blog-image-3.png" alt="Slide Image">
+                            </div>
+
+                            <div class="slide-context">
+                                <article>
+                                    <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="6" height="6" viewBox="0 0 6 6" fill="none">
+                                        <circle cx="3" cy="3" r="3" fill="#FFB900"/>
+                                        </svg>
+                                    </span>
+                                    <time datetime="2025-05-24">21 November 2021</time>
+
+                                    <!-- custom line -->
+                                    <div class="custom-line"></div>
+
+                                    <h2>How to become a pro web designer in 2022 and get remot job?</h2>
+
+                                    <a href="" class="btn">Read More</a>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- single slide item 4 -->
+                    <div class="single-slide-box">
+                        <div class="single-slide">
+                            <div class="slide-image">
+                                <img src="assets/img/blog-image-2.png" alt="Slide Image">
+                            </div>
+
+                            <div class="slide-context">
+                                <article>
+                                    <span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="6" height="6" viewBox="0 0 6 6" fill="none">
+                                            <circle cx="3" cy="3" r="3" fill="#FFB900"/>
+                                        </svg>
+                                    </span>
+                                    <time datetime="2025-05-24">21 November 2021</time>
+
+                                    <!-- custom line -->
+                                    <div class="custom-line"></div>
+
+                                    <h2>How to become a pro web designer in 2022 and get remot job?</h2>
+
+                                    <a href="" class="btn">Read More</a>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer area -->
+    <footer>
+        <div class="container">
+            <div class="footer-main">
+                <div class="footer-branding">
+                    <div class="footer-logo">
+                        <img src="assets/img/footer-logo.png" alt="Site Logo">
+                    </div>
+
+                    <p>Need to help for your dream Career? <br> trust us. With Lesson, study becomes <br> a lot easier with us.</p>
+
+                    <div class="footer-social">
+                        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <div class="footer-company">
+                        <h4>Company</h4>
+                        <!-- border line -->
+                        <div class="border-line"></div>
+
+                        <ul>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Features</a></li>
+                            <li><a href="#">Our Pricing</a></li>
+                            <li><a href="#">Latest News</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-support">
+                        <h4>Support</h4>
+                        <!-- border line -->
+                        <div class="border-line"></div>
+
+                        <ul>
+                            <li><a href="#">FAQ’s</a></li>
+                            <li><a href="#">Terms & Conditions</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="">Contact Us</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-address">
+                        <h4>Address</h4>
+                        <!-- border line -->
+                        <div class="border-line"></div>
+                        
+                        <address>
+                            <p><strong>Location:</strong> 27 Division St, New York, NY 10002, USA</p>
+                            <p><strong>Email:</strong> <a href="mailto:email@gmail.com">email@gmail.com</a></p>
+                            <p><strong>Phone:</strong> <a href="tel:0001234567890">+000 1234 567 890</a></p>
+                        </address>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="footer-foot">
+                Copyright ©2025 webdesign.gdn All rights reserved | Developed by Zahid Hasan
+            </div>
+        </div>
+    </footer>
+
+    <!-- main js -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
