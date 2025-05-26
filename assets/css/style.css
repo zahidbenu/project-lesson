@@ -206,6 +206,23 @@ nav ul li a:hover {
     margin: 15px 0;
 }
 
+.active-mobile-item {
+    color: #171100;
+    font-weight: 600;
+    transform: none !important;
+}
+
+.active-mobile-item::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: '';
+    background: #171100;
+    width: 40%;
+    height: 2px;
+    border-radius: 1px;
+}
+
 .mobile-menu-close {
     position: absolute;
     top: -10px;
@@ -215,7 +232,6 @@ nav ul li a:hover {
 
 .mobile-menu.visible {
     display: block;
-    
 }
 
 /* Hero area  */
@@ -961,12 +977,11 @@ footer hr {
 /* Page's top sections*/
 
 .feature-area.course-page,
-.about-area.pricing-page,
-.testimonial-area.reviews-page {
+.about-area.pricing-page {
     padding-top: 38px;
 }
 
-.testimonial-area.reviews-page {
+.testimonial-area .reviews-page {
     margin-top: 38px;
 }
 

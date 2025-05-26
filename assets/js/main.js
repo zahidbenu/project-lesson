@@ -8,6 +8,12 @@ $(document).ready(function() {
       }
   });
 
+   $('.mobile-menu-toggle ul li a').each(function () {
+      if (this.href === currentUrl) {
+          $(this).addClass('active-mobile-item');
+      }
+  });
+
   // Mobile menu
 
   $('#mobileToggle').click(function() {
