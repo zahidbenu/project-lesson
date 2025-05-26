@@ -149,6 +149,7 @@ nav ul li {
 nav ul li a {
     position: relative;
     color: #5F5B53;
+    transition: none;
 }
 
 nav ul li a:hover {
@@ -158,6 +159,7 @@ nav ul li a:hover {
 .active-item {
     /* font-weight: 600; */
     color: #171100;
+    transform: scale(1.03);
 }
 
 .active-item::after {
