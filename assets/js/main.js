@@ -73,11 +73,12 @@ $(document).ready(function() {
   });
 
   // === Feature course slider
+  
   $('.course-slider-wrapper').slick({
       dots: false,
-      arrows:true,
+      arrows: true,
       infinite: true,
-      autoplay: true,
+      autoplay: false,
       autoplaySpeed: 3000,
       slidesToShow: 3,
       slidesToScroll: 1,
@@ -101,6 +102,7 @@ $(document).ready(function() {
       ]
   });
 
+  // slider nav
   $('.slider-nav .mm-slick-prev').click(function() {
     $(this).addClass('active');
     $('.slider-nav .mm-slick-prev svg').addClass('active-svg');
@@ -115,6 +117,15 @@ $(document).ready(function() {
     
     $('.slider-nav .mm-slick-prev').removeClass('active');
     $('.slider-nav .mm-slick-prev svg').removeClass('active-svg');
+  });
+
+  // single slide hover
+  $('.course-slider-wrapper .single-slide').mouseenter(function() {
+    $('.course-slider-wrapper .slick-slide.slick-current.slick-active .single-slide .btn').css('background-color', '#171100');
+  });
+
+  $('.course-slider-wrapper .single-slide').mouseleave(function() {
+    $('.course-slider-wrapper .slick-slide.slick-current.slick-active .single-slide .btn').css('background-color', '#FFB900');
   });
 
   // === Testimonial slider
@@ -163,4 +174,14 @@ $(document).ready(function() {
         }
       ]
   });
+
+  // single slide hover
+  $('.blog-slider-wrapper .single-slide').mouseenter(function() {
+    $('.blog-slider-wrapper .slick-slide.slick-current.slick-active .single-slide .btn').css('background-color', '#171100');
+  });
+
+  $('.blog-slider-wrapper .single-slide').mouseleave(function() {
+    $('.blog-slider-wrapper .slick-slide.slick-current.slick-active .single-slide .btn').css('background-color', '#FFB900');
+  });
+
 });

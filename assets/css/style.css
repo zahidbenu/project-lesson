@@ -527,6 +527,7 @@ nav ul li a:hover {
 }
 
 .single-slide-box {
+    width: 100%;
     padding: 40px 15px; 
     padding-top: 15px;
 }
@@ -574,14 +575,30 @@ nav ul li a:hover {
     align-items: center;
 }
 
+.single-slide:hover .btn {
+    background-color: #FFB900;
+}
+
+.single-slide .btn:hover {
+    background-color: #FFB900 !important;
+}
+
 /* slick */
 
 .slick-slide.slick-current.slick-active .single-slide {
-    border: none;
+    border: 1px solid transparent;
     box-shadow: 0px 18px 36px 0px rgba(0, 0, 0, 0.05);
 }
 
+.slick-slide.slick-current.slick-active .single-slide:hover .btn {
+    background: #FFB900 !important;
+}
+
 .slick-slide.slick-current.slick-active .single-slide .btn {
+    background: #FFB900;
+}
+
+.slick-slide.slick-current.slick-active .single-slide .btn:hover {
     background: #FFB900;
 }
 
@@ -836,7 +853,6 @@ article .btn {
 /* slick */
 
 .blog-slider-wrapper .slick-slide.slick-current.slick-active .single-slide {
-    border: none;
     box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.05);
 }
 
@@ -943,6 +959,10 @@ footer {
     display: inline-block;
 }
 
+.footer-address address {
+    display: inline-grid;
+}
+
 .footer-address address strong {
     color: #FFFFFF;
     font-weight: 600;
@@ -974,15 +994,11 @@ footer hr {
     padding: 28px 0;
 }
 
-/* Page's top sections*/
+/* Single page */
 
-.feature-area.course-page,
-.about-area.pricing-page {
-    padding-top: 38px;
-}
-
-.testimonial-area .reviews-page {
-    margin-top: 38px;
+.single-page {
+    margin-top: 30px;
+    padding-top: 30px;
 }
 
 /* Media query */
@@ -1190,6 +1206,7 @@ footer hr {
 
     .hero-cta {
         flex-direction: column;
+        align-items: flex-start;
     }
 
     .watch-video {
