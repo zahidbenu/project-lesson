@@ -25,27 +25,25 @@ $(document).ready(function() {
   });
 
   //Course animation
+  
+  const boxHeight = $('.single-highlight-box').outerHeight();
+  const $list = $('.highlight-track');
 
-  $(document).ready(function () {
-    const boxHeight = $('.single-highlight-box').outerHeight();
-    const $list = $('.highlight-track');
+  function smoothLoop() {
+    const $firstItem = $list.children().first();
 
-    function smoothLoop() {
-      const $firstItem = $list.children().first();
+    $list.animate(
+      { top: -boxHeight + 'px' },
+      1000,
+      'swing',
+      function () {
+        $list.append($firstItem); 
+        $list.css('top', '13px'); 
+      }
+    );
+  }
 
-      $list.animate(
-        { top: -boxHeight + 'px' },
-        1000,
-        'swing',
-        function () {
-          $list.append($firstItem); 
-          $list.css('top', '13px'); 
-        }
-      );
-    }
-
-    setInterval(smoothLoop, 3000);
-  });
+  setInterval(smoothLoop, 3000);
 
   // Hero video popup
     
